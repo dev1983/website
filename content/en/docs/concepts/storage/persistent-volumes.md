@@ -296,8 +296,7 @@ spec:
   capacity:
     storage: 5Gi
   volumeMode: Filesystem
-  accessModes:
-    - ReadWriteOnce
+  accessModes: [ "ReadWriteOnce" ]
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: slow
   mountOptions:
@@ -447,8 +446,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: myclaim
 spec:
-  accessModes:
-    - ReadWriteOnce
+  accessModes: [ "ReadWriteOnce" ]
   volumeMode: Filesystem
   resources:
     requests:
