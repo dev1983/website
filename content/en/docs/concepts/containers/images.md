@@ -317,10 +317,10 @@ metadata:
   namespace: awesomeapps
 spec:
   containers:
-    - name: foo
-      image: janedoe/awesomeapp:v1
+  - name: foo
+    image: janedoe/awesomeapp:v1
   imagePullSecrets:
-    - name: myregistrykey
+  - name: myregistrykey
 EOF
 
 cat <<EOF >> ./kustomization.yaml
